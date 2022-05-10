@@ -1,0 +1,1 @@
+cat backup.sql | docker exec -i mysql /usr/bin/mysql -u strapi --password=strapi strapi
