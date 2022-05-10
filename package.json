@@ -7,13 +7,16 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "deploy": "pm2 startOrRestart pm2.json --env production",
+    "deploy:container": "pm2-runtime pm2.json --env production"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.9",
     "@strapi/plugin-users-permissions": "4.1.9",
     "@strapi/strapi": "4.1.9",
     "better-sqlite3": "7.4.6",
+    "mysql": "^2.18.1",
+    "pm2": "^5.2.0",
     "strapi-provider-email-smtp": "^1.0.3"
   },
   "author": {
