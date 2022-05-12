@@ -16,9 +16,9 @@
     "@strapi/plugin-users-permissions": "4.1.9",
     "@strapi/strapi": "4.1.9",
     "better-sqlite3": "7.4.6",
-    "mysql": "^2.18.1",
-    "pm2": "^5.2.0",
-    "strapi-provider-email-smtp": "^1.0.3"
+    "mysql": "2.18.1",
+    "pm2": "5.2.0",
+    "strapi-provider-email-smtp": "1.0.3"
   },
   "author": {
     "name": "A Strapi developer"
