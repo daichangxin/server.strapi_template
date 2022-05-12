@@ -9,7 +9,7 @@
     "build": "strapi build",
     "deploy": "pm2 startOrRestart pm2.json --env production",
     "deploy:container": "pm2-runtime pm2.json --env production",
-    "restart": "docker-compose --env-file .env.prod up -d --build",
+    "server:start": "docker-compose --env-file .env.prod up -d --build",
     "server:update": "sh ./scripts/server_update.sh"
   },
   "dependencies": {
