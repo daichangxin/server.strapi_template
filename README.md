@@ -18,6 +18,12 @@ npm run deploy
 npm run restart
 ```
 
+注意 docker-compose 的--env-file 命令行参数需要版本 1.25.0 及以上。如果低于这个版本运行 docker-compose 可以使用：
+
+```
+env $(cat .env.prod) docker-compose up -d --build
+```
+
 ## 功能
 
 - 内置 email 插件，在 env 中配置参数即可使用
